@@ -1,12 +1,16 @@
 .main {
   min-height: 100vh;
   background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -39,6 +43,8 @@
   padding: 40px 20px;
   margin-top: 60px;
   border-top: 4px solid #06FFA5;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

@@ -1,12 +1,16 @@
 .main {
   min-height: 100vh;
   background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -39,10 +43,17 @@
 .section h2 {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #000;
   text-transform: uppercase;
   letter-spacing: -1px;
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  font-weight: 500;
 }
 
 .cardGrid {
@@ -195,6 +206,73 @@
   margin: 0;
 }
 
+.shapesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.shapeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.shapeIcon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.shapeContent h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.shapeContent p {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.mixedShapesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 400px;
+}
+
+.miniShapeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.miniIcon {
+  font-size: 2rem;
+}
+
+.miniShapeContent strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.miniShapeContent p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
 .footer {
   background: #000;
   color: #fff;
@@ -202,6 +280,8 @@
   padding: 40px 20px;
   margin-top: 60px;
   border-top: 4px solid #00E5FF;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

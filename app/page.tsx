@@ -1,6 +1,8 @@
 import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
 import { Card } from '@/components/Card';
+import { ShapeCard } from '@/components/ShapeCard';
+import { DecorativeShape } from '@/components/DecorativeShape';
 import { Button } from '@/components/Button';
 import Link from 'next/link';
 import styles from './page.module.css';
@@ -8,6 +10,13 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
+      {/* Decorative floating shapes */}
+      <DecorativeShape shape="circle" color="primary" size={100} top="15%" left="3%" opacity={0.15} />
+      <DecorativeShape shape="blob" color="secondary" size={150} top="30%" right="5%" opacity={0.12} />
+      <DecorativeShape shape="triangle" color="accent" size={80} top="60%" left="8%" opacity={0.18} />
+      <DecorativeShape shape="hexagon" color="pink" size={120} bottom="20%" right="10%" opacity={0.15} />
+      <DecorativeShape shape="star" color="purple" size={70} top="45%" right="15%" opacity={0.2} />
+      
       <Navigation />
       <Hero />
       
