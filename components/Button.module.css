@@ -1,0 +1,66 @@
+.button {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: var(--border-width) solid var(--color-black);
+  background: var(--color-primary);
+  color: var(--color-black);
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-black);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 1rem;
+}
+
+.button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 6px 6px 0 var(--color-black);
+}
+
+.button:active {
+  transform: translate(var(--shadow-offset), var(--shadow-offset));
+  box-shadow: 0 0 0 var(--color-black);
+}
+
+/* Variants */
+.primary {
+  background: var(--color-primary);
+}
+
+.secondary {
+  background: var(--color-secondary);
+}
+
+.accent {
+  background: var(--color-accent);
+}
+
+.pink {
+  background: var(--color-pink);
+  color: var(--color-white);
+}
+
+.purple {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.green {
+  background: var(--color-green);
+}
+
+/* Sizes */
+.small {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 1rem;
+}
+
+.large {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1.25rem;
+}

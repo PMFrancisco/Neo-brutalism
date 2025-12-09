@@ -1,0 +1,168 @@
+.showcase {
+  padding: var(--spacing-2xl) var(--spacing-md);
+  background: var(--color-bg);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container > h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.section {
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-xl);
+  background: var(--color-white);
+  border: var(--border-width) solid var(--color-black);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-black);
+}
+
+.section h3 {
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.cardGrid h4 {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: 1.25rem;
+}
+
+.cardGrid p {
+  margin: 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.colorSwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.color {
+  width: 100%;
+  aspect-ratio: 1;
+  border: var(--border-width) solid var(--color-black);
+  box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.colorPrimary {
+  background: var(--color-primary);
+}
+
+.colorSecondary {
+  background: var(--color-secondary);
+}
+
+.colorAccent {
+  background: var(--color-accent);
+}
+
+.colorPink {
+  background: var(--color-pink);
+}
+
+.colorPurple {
+  background: var(--color-purple);
+}
+
+.colorGreen {
+  background: var(--color-green);
+}
+
+.colorBlue {
+  background: var(--color-blue);
+}
+
+.colorOrange {
+  background: var(--color-orange);
+}
+
+.colorSwatch span {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.colorSwatch code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.principle {
+  text-align: center;
+}
+
+.principleIcon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.principle h4 {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: 1.25rem;
+}
+
+.principle p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-md);
+  }
+  
+  .cardGrid,
+  .principles {
+    grid-template-columns: 1fr;
+  }
+  
+  .colorGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
