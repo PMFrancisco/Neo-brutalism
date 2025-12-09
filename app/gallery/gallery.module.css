@@ -1,17 +1,23 @@
 .main {
   min-height: 100vh;
   background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
   text-align: center;
   padding: 40px 20px 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .header h1 {
@@ -39,6 +45,8 @@
   padding: 40px 20px;
   margin-top: 60px;
   border-top: 4px solid #FF006E;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

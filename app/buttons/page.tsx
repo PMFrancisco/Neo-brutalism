@@ -3,11 +3,19 @@
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
+import { DecorativeShape } from '@/components/DecorativeShape';
 import styles from './buttons.module.css';
 
 export default function ButtonsPage() {
   return (
     <main className={styles.main}>
+      {/* Decorative floating shapes */}
+      <DecorativeShape shape="diamond" color="primary" size={95} top="10%" left="6%" opacity={0.18} />
+      <DecorativeShape shape="pentagon" color="secondary" size={110} top="28%" right="7%" opacity={0.15} />
+      <DecorativeShape shape="circle" color="green" size={85} top="50%" left="4%" opacity={0.2} />
+      <DecorativeShape shape="blob" color="accent" size={125} bottom="22%" right="9%" opacity={0.15} />
+      <DecorativeShape shape="hexagon" color="pink" size={75} top="65%" right="14%" opacity={0.18} />
+      
       <Navigation />
       
       <div className={styles.container}>

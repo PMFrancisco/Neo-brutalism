@@ -1,11 +1,21 @@
 import { Navigation } from '@/components/Navigation';
 import { Card } from '@/components/Card';
+import { ShapeCard } from '@/components/ShapeCard';
+import { DecorativeShape } from '@/components/DecorativeShape';
 import { Button } from '@/components/Button';
 import styles from './cards.module.css';
 
 export default function CardsPage() {
   return (
     <main className={styles.main}>
+      {/* Decorative floating shapes */}
+      <DecorativeShape shape="circle" color="primary" size={80} top="10%" left="5%" opacity={0.2} />
+      <DecorativeShape shape="triangle" color="secondary" size={60} top="20%" right="8%" opacity={0.15} />
+      <DecorativeShape shape="hexagon" color="accent" size={100} top="50%" left="3%" opacity={0.2} />
+      <DecorativeShape shape="blob" color="pink" size={120} bottom="15%" right="5%" opacity={0.15} />
+      <DecorativeShape shape="star" color="purple" size={70} top="70%" left="10%" opacity={0.2} />
+      <DecorativeShape shape="diamond" color="orange" size={90} top="35%" right="12%" opacity={0.15} />
+      
       <Navigation />
       
       <div className={styles.container}>
@@ -163,6 +173,130 @@ export default function CardsPage() {
                 <Button variant="pink">See Menu</Button>
               </div>
             </Card>
+          </div>
+        </section>
+
+        {/* Shape Cards */}
+        <section className={styles.section}>
+          <h2>Dynamic Shapes</h2>
+          <p className={styles.sectionSubtitle}>Not just squares! Explore our diverse shape collection</p>
+          
+          <div className={styles.shapesGrid}>
+            <ShapeCard shape="circle" color="primary" shadowSize="large" size="large">
+              <div className={styles.shapeContent}>
+                <div className={styles.shapeIcon}>⭕</div>
+                <h3>Circle</h3>
+                <p>Round & smooth</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="hexagon" color="secondary" shadowSize="large" size="large">
+              <div className={styles.shapeContent}>
+                <div className={styles.shapeIcon}>⬡</div>
+                <h3>Hexagon</h3>
+                <p>Six-sided geometry</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="diamond" color="accent" shadowSize="large" size="large">
+              <div className={styles.shapeContent}>
+                <div className={styles.shapeIcon}>◆</div>
+                <h3>Diamond</h3>
+                <p>Sharp & angular</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="triangle" color="pink" shadowSize="large" size="large">
+              <div className={styles.shapeContent}>
+                <div className={styles.shapeIcon}>▲</div>
+                <h3>Triangle</h3>
+                <p>Three points</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="blob" color="purple" shadowSize="large" size="large">
+              <div className={styles.shapeContent}>
+                <div className={styles.shapeIcon}>💧</div>
+                <h3>Blob</h3>
+                <p>Organic morph</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="star" color="orange" shadowSize="large" size="large">
+              <div className={styles.shapeContent}>
+                <div className={styles.shapeIcon}>⭐</div>
+                <h3>Star</h3>
+                <p>Five points</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="pentagon" color="green" shadowSize="large" size="large">
+              <div className={styles.shapeContent}>
+                <div className={styles.shapeIcon}>⬟</div>
+                <h3>Pentagon</h3>
+                <p>Five sides</p>
+              </div>
+            </ShapeCard>
+          </div>
+        </section>
+
+        {/* Mixed Shapes Gallery */}
+        <section className={styles.section}>
+          <h2>Shape Combinations</h2>
+          <p className={styles.sectionSubtitle}>Create playful layouts by mixing different shapes</p>
+          
+          <div className={styles.mixedShapesGrid}>
+            <ShapeCard shape="circle" color="pink" shadowSize="medium" size="small">
+              <div className={styles.miniShapeContent}>
+                <div className={styles.miniIcon}>🎨</div>
+                <strong>Art</strong>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="hexagon" color="blue" shadowSize="medium" size="medium">
+              <div className={styles.miniShapeContent}>
+                <div className={styles.miniIcon}>☕</div>
+                <strong>Coffee</strong>
+                <p>Fresh daily</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="triangle" color="secondary" shadowSize="medium" size="small">
+              <div className={styles.miniShapeContent}>
+                <div className={styles.miniIcon}>🎵</div>
+                <strong>Music</strong>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="star" color="accent" shadowSize="medium" size="medium">
+              <div className={styles.miniShapeContent}>
+                <div className={styles.miniIcon}>✨</div>
+                <strong>Events</strong>
+                <p>Every Friday</p>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="blob" color="green" shadowSize="medium" size="small">
+              <div className={styles.miniShapeContent}>
+                <div className={styles.miniIcon}>🌿</div>
+                <strong>Nature</strong>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="diamond" color="purple" shadowSize="medium" size="small">
+              <div className={styles.miniShapeContent}>
+                <div className={styles.miniIcon}>💎</div>
+                <strong>Premium</strong>
+              </div>
+            </ShapeCard>
+            
+            <ShapeCard shape="pentagon" color="orange" shadowSize="medium" size="medium">
+              <div className={styles.miniShapeContent}>
+                <div className={styles.miniIcon}>🏆</div>
+                <strong>Awards</strong>
+                <p>2025 winner</p>
+              </div>
+            </ShapeCard>
           </div>
         </section>
 
