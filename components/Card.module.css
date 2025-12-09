@@ -1,0 +1,75 @@
+.card {
+  border: var(--border-width) solid var(--color-black);
+  padding: var(--spacing-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translate(-2px, -2px);
+}
+
+/* Colors */
+.primary {
+  background: var(--color-primary);
+}
+
+.secondary {
+  background: var(--color-secondary);
+}
+
+.accent {
+  background: var(--color-accent);
+}
+
+.pink {
+  background: var(--color-pink);
+  color: var(--color-white);
+}
+
+.purple {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.green {
+  background: var(--color-green);
+}
+
+.blue {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.orange {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+.white {
+  background: var(--color-white);
+}
+
+/* Shadow sizes */
+.shadow-small {
+  box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.shadow-small:hover {
+  box-shadow: 6px 6px 0 var(--color-black);
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-black);
+}
+
+.shadow-medium:hover {
+  box-shadow: 10px 10px 0 var(--color-black);
+}
+
+.shadow-large {
+  box-shadow: 12px 12px 0 var(--color-black);
+}
+
+.shadow-large:hover {
+  box-shadow: 14px 14px 0 var(--color-black);
+}

@@ -1,0 +1,84 @@
+.gallery {
+  padding: var(--spacing-2xl) var(--spacing-md);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.header h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.artCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.artImage {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-bottom: var(--border-width) solid var(--color-black);
+  margin: calc(var(--spacing-md) * -1);
+  margin-bottom: var(--spacing-md);
+}
+
+.placeholder {
+  font-size: 4rem;
+}
+
+.artInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex-grow: 1;
+}
+
+.artTitle {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.artist {
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.artFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
