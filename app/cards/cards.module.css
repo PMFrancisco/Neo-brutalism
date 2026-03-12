@@ -1,0 +1,220 @@
+.main {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 40px;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #000;
+  text-shadow: 4px 4px 0 #00E5FF;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.cardContent {
+  padding: 30px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cardContent h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cardContent code {
+  background: #000;
+  color: #06FFA5;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-family: 'Courier New', monospace;
+  align-self: flex-start;
+}
+
+.shadowGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 40px;
+}
+
+.shadowCard {
+  padding: 40px;
+  text-align: center;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.shadowCard h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.shadowCard p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.shadowCard code {
+  background: #000;
+  color: #FFD23F;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: 'Courier New', monospace;
+  margin: 0 auto;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.richCard {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  min-height: 300px;
+}
+
+.cardIcon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.richCard h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.richCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.nestedDemo {
+  padding: 40px;
+  text-align: center;
+}
+
+.nestedDemo h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.nestedDemo > p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.nestedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.miniCard {
+  padding: 20px;
+  text-align: center;
+}
+
+.miniCard strong {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.miniCard p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 4px solid #00E5FF;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .shadowGrid {
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+  }
+}
